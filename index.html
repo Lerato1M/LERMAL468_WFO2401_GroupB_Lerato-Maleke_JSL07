@@ -8,17 +8,23 @@
     <title>Proud of Your Progress Cards</title>
 </head>
 <body>
-    <h1>✨ Proud of Your Progress</h1>
+    <h1>✨ Proud of Your Progress ✨</h1>
     
     <form id="cardForm">
-        <label for="studentName">Student's Name:</label>
-        <input type="text" id="studentName" required>
+        <div>
+            <label for="studentName">Student's Name:</label>
+            <input type="text" id="studentName" required>
+        </div>
 
-        <label for="personalMessage">Personalized Message:</label>
-        <input type="text" id="personalMessage" required>
+        <div>
+            <label for="personalMessage">Personalized Message:</label>
+            <input type="text" id="personalMessage" required>
+        </div>
         
-        <label for="courseName">Course Name:</label>
-        <input type="text" id="courseName" required>
+        <div>
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName" required>
+        </div>
 
         <button type="submit">Generate Certificate</button>
     </form>
@@ -29,6 +35,14 @@
             <span class="close">&times;</span>
             <div id="certificateContent">
                 <!-- Certificate content will appear here -->
+                <h1 class="certificate-heading">Certificate of Achievement</h1>
+                <div class="certificate-content">
+                    <p>This is to certify that</p>
+                    <div><b> ${studentName}</b></div>
+                    <div>has completed the course<b> ${courseName}</b> with grit and tenacity</div>
+                    <img src="logo.png" alt="Logo" class="logo">
+                <div><b>${personalMessage}</b></div>
+            `;    
             </div>
         </div>
     </div>
