@@ -8,8 +8,14 @@ body {
 
 h1 {
   color: #333;
+  font-size: 40px;
 }
-
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+    font-weight: 400;
+  }
+  
 #cardForm {
   margin: 20px auto;
   max-width: 400px;
@@ -88,22 +94,45 @@ button:hover {
   border: 2px solid #dc7f5f;
   border-radius: 10px;
   margin: 20px 0;
+  font-size: 5px;
+  font-weight: normal
+
 }
 
-h1, .modal-content h2, .modal-content p {
+h1 {
+  color: #434443;
+  font-size: 30px;
+  font-weight: bold
+  
+}
+
+h2 {
+  color: #434443;
+  font-size: 30px;
+  font-weight: bold
+}
+.modal-content , .modal-content p {
   color: #5d5f5e;
+  font-size: 20px;
+  font-weight: normal
 }
 
 .close {
   color: #dc7f5f;
 }
 
-/* Adding a fancy border to the certificate content */
+/* border to the certificate content */
 #certificateContent {
-  background: #f9f9f9 url('path/to/your/decorative-border-image.png') center/contain no-repeat;
+  background: #f9f9f9;
+  /*opacity: 0.5;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: dotted;
 }
 
-/* Adjust button styles to fit the theme */
+/* button styles to*/
 button {
   background-color: #659f8f;
   color: #fff;
@@ -113,3 +142,20 @@ button:hover {
   background-color: #5d5f5e;
 }
 
+.logo {
+  display: block;
+  margin: 50px auto; /* vertical margin */
+  max-width: 200px; /*maximum width of the logo */
+  background-color: #659f8f;
+  padding: 20px;
+}
+
+
+.certificate-content {
+  font-size: 20px; /*desired font size */
+  font-weight: normal; /* font weight */
+}
+
+.certificate-content div {
+  margin-bottom: 10px; /* spacing between each line */
+}
